@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>.hide{display: none;}</style>
+</head>
+<body>
+    
+    <button class="titulo">
+        <h3>Accord 1</h3>
+    </button>
+    <div class="hide">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum <strong>debitis nemo fugit rem modi repellat cupiditate sapiente itaque tenetur consectetur. Provident ipsum, praesentium ipsam vel quasi sint molestiae rem iste.
+        </p>
+    </div>
+    <button class="titulo">
+        <h3>Accord 2</h3>
+    </button>
+    <div class="hide">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum <strong>debitis nemo fugit rem modi repellat cupiditate sapiente itaque tenetur consectetur. Provident ipsum, praesentium ipsam vel quasi sint molestiae rem iste.
+        </p>
+    </div>
+    <button class="titulo">
+        <h3>Accord</h3>
+    </button>
+    <div class="hide">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum <strong>debitis nemo fugit rem modi repellat cupiditate sapiente itaque tenetur consectetur. Provident ipsum, praesentium ipsam vel quasi sint molestiae rem iste.
+        </p>
+    </div>
+   
+    <script>
+        var acc = document.getElementsByClassName("titulo");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var hide = this.nextElementSibling;
+    if (hide.style.display === "block") {
+      hide.style.display = "none";
+    } else {
+      hide.style.display = "block";
+    }
+  });
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br
+">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Confirmação de senha</legend>
+    
+            <input type="password" placeholder="Password" id="psw"  required>
+            <input type="password" placeholder="Confirm Password" id="pswconfirm" required>
+    
+            <button type="submit">Confirm</button>
+        </fieldset>
+    </form>
+    <script>
+        const password = document.getElementById("psw")
+        const confirmpassword = document.getElementById("pswconfirm");
+
+function validatePassword(){
+if(psw.value != pswconfirm.value) {
+    confirmpassword.setCustomValidity("As senhas não conferem");
+} else {
+    confirmpassword.setCustomValidity('');
+}
+}
+
+password.onchange = validatePassword;
+pswconfirm.onkeyup = validatePassword; 
+
+    </script>
+</body>
+</html>

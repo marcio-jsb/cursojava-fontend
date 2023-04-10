@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Confirmação de senha</legend>
+    
+            <input type="password" placeholder="Password" id="psw">
+            <input type="password" placeholder="Confirm Password" id="pswconfirm">
+            <br><br>
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" minlength="14" maxlength="14" oninput="mascaraCpf(this)" required>
+                <br><br>
+
+            <input type="submit" value="Enviar"> 
+        </fieldset>
+    </form>
+    <script>
+    const password = document.getElementById("psw")
+    const confirmpassword = document.getElementById("pswconfirm");
+    
+
+function validatePassword(){
+if(psw.value != pswconfirm.value) {
+    confirmpassword.setCustomValidity("As senhas não conferem");
+} else {
+    confirmpassword.setCustomValidity('');
+}
+}
+
+password.onchange = validatePassword;
+//pswconfirm.onkeyup = validatePassword; 
+
+
+function mascaraCpf(cpf) {
+    if (cpf.value.length === 3 || cpf.value.length === 7) {
+cpf.value += ".";
+    } else if (cpf.value.length === 11) {
+cpf.value += "-";
+    }
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Up</title>
+    <style>
+        dialog{width: 600px; background-color: azure;}
+        button{cursor: pointer;}
+    </style>
+</head>
+<body>
+    <button>Clicar</button>
+    <dialog> <!--escrever open so para ver antes do js-->
+        <h2>texto</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti fugiat voluptates deleniti ipsam pariatur enim voluptate quae blanditiis nulla adipisci, illum consequuntur soluta asperiores debitis, doloribus provident, accusantium dolorem!</p>
+        <button>&#9747;</button>
+    </dialog>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aliquid, explicabo maxime eos blanditiis quo eaque dolorum pariatur magnam eligendi, suscipit reiciendis. Doloremque sit accusantium autem obca
+        ecati aut libero provident?</p>
+        <br><br><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aliquid, explicabo maxime eos blanditiis quo eaque dolorum pariatur magnam eligendi, suscipit reiciendis. Doloremque sit accusantium autem obca
+            ecati aut libero provident?</p>
+            <br><br><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aliquid, explicabo maxime eos blanditiis quo eaque dolorum pariatur magnam eligendi, suscipit reiciendis. Doloremque sit accusantium autem obca
+                ecati aut libero provident?</p>
+                <br><br><br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aliquid, explicabo maxime eos blanditiis quo eaque dolorum pariatur magnam eligendi, suscipit reiciendis. Doloremque sit accusantium autem obca
+                    ecati aut libero provident?</p>
+                    <br><br><br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium aliquid, explicabo maxime eos blanditiis quo eaque dolorum pariatur magnam eligendi, suscipit reiciendis. Doloremque sit accusantium autem obca
+                        ecati aut libero provident?</p>
+                        <br><br><br>
+    <script>
+        //variavel que guarda a tag do html
+        const btn = document.querySelector("button")
+        const popup = document.querySelector("dialog")
+        const btnclose = document.querySelector("dialog button")
+        window.addEventListener("scroll", function(){
+        
+            popup.show() //fecha com o esc ñ precisa clicar no close.
+        })
+        
+        btnclose.onclick = function(){
+            popup.close()
+        }
+    
+
+
+    </script>
+</body>
+</html>

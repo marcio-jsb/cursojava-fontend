@@ -1,0 +1,47 @@
+*{margin: 0; padding: 0;}
+
+.navbar{background-color: antiquewhite;}
+.nav-ul{
+    list-style-type: none; /*tira o bullet*/
+    display: flex; /*deixa o conteudo dinamico */
+    flex-direction: row; /*os conteudos vao ficar em linha*/
+}
+.nav-ul li{
+    padding: 14px 50px; /*espaco entre os li*/
+}
+.nav-ul li a {
+    color: brown; 
+    text-decoration: none;
+}
+.toggle-nav{display: none;}/*some com o hamburger */
+
+@media(max-width:768px){
+    .navbar{background-color: antiquewhite;}
+
+.nav-ul{
+    display: none;/**/
+    flex-direction: column;
+    position: fixed;
+    top:0;
+
+    right: 0;
+    left: 0;
+    background-color: antiquewhite;
+}
+    .mostrarmenu{display: block;}
+
+.toggle-nav{
+    display: block; /*faz o  botão aparecer*/
+    position: fixed;
+    top: 10px;
+    right: 0;
+    padding-top: 4px;
+    cursor: pointer;
+   
+    
+}
+.btnclose{display: none;} /*tira o span de fechar*/
+
+
+
+}

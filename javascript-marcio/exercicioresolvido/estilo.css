@@ -1,0 +1,57 @@
+p{text-indent:20px;
+  text-align: justify;}
+
+#lista{
+    margin-left: 5%;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px dashed black;
+}
+.ulayo{
+    width: 70%;
+}
+.containertext-center{
+    width: 80%;
+    margin: auto;
+  
+}
+#listaprimeira {
+background-image: linear-gradient(to bottom, rgb(163, 161, 157),white,white,white,white,white);}
+#listaprimeira h1{
+    margin-left: 10%;
+}
+
+#listaprimeira ul li{
+    list-style: square;
+    margin-left: 15%;
+    margin-bottom: 2px;
+    padding-bottom: 4.5px;
+   
+}
+#listaprimeira ul{
+    border-bottom: 1px dashed black;
+    margin-bottom:11.4% ;
+}
+
+.col{
+    color: rgb(163, 161, 157);
+}
+footer{
+    background-color: rgb(163, 161, 157);
+    height: 50px;
+}
+
+.data{
+   background-color:black;
+   color:white;
+   display: inline-block;
+   padding:10px 20px;
+}
+h1{color:black;}
+
+.cor{
+    color:rgb(194, 125, 125)
+}

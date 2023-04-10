@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Up</title>
+    <style>
+        button{cursor: pointer;}
+    </style>
+</head>
+<body>
+    <button>Clicar</button>
+    <dialog> <!--escrever open so para ver antes do js-->
+        <h2>texto</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti fugiat voluptates deleniti ipsam pariatur enim voluptate quae blanditiis nulla adipisci, illum consequuntur soluta asperiores debitis, doloribus provident, accusantium dolorem!</p>
+        <button>Fechar</button>
+    </dialog>
+    <script>
+        //variavel que guarda a tag do html
+        const btn = document.querySelector("button")
+        const popup = document.querySelector("dialog")
+        const btnclose = document.querySelector("dialog button")
+        
+        btn.onclick = function () {
+            //popup.show()
+            popup.showModal() //fecha com o esc ñ precisa clicar no close.
+        }
+        btnclose.onclick = function(){
+            popup.close()
+        }
+        
+
+
+    </script>
+</body>
+</html>
